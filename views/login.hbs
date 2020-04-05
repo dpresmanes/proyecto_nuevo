@@ -1,0 +1,112 @@
+
+<h1>{{login}}</h1>
+<header class="container-fluid navbar-light sticky-top">
+        <nav class=" navbar navbar-expand-lg container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active ">
+              <a class="nav-link " style="color: grey; " href="/home"> Home <span class="sr-only">(current)</span></a>
+            </li>
+             <li class="nav-item ">
+              <a class="nav-link" style="color: grey; "href="/registro"> Registro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: grey; "href="/contacto"> Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: grey;"href="/login"> Login </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: grey;"href="/turno"> Turnos </a>
+            </li>
+            
+
+          </ul>   
+        </div>
+      </nav>
+ </header>    
+
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
+      <div class="align-self-center mx-auto"><h2 style="color:white; font-size:50px;" > Kinei <i class="fas fa-spa" style="color:white"></i></h2>
+            </div>
+    </div>
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">Bienvenido!</h3>
+              <form action="/login" method="post"> 
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" name="usuario" placeholder="Email address" required autofocus>
+                  <label for="inputEmail">Email</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>
+                  <label for="inputPassword">Password</label>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Remember password</label>
+                </div>
+                <button class="btn btn-lg btn-success btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                <div class="text-center">
+                  <a class="small" href="/registro">No tienes password?</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    <div class="container align-items-center justify-content-center">
+
+<div class="row mt-4 justify-content-center">
+    <div class="col-6">
+        <form action="/login" method="post">
+        <div class="form-group">
+        <input type="text"placeholder="mail"  class="form-control" name="usuario">
+        </div>
+        <div class="form-group">
+        <input type="password" class="form-control" placeholder="**********" name="password">
+        </div>
+
+        <button type="submit"class="btn btn-primary btn-block">Ingresar</button>
+        </form>
+        </div>
+
+    </div>
+</div>
+<h2>{{message}}</h2>
+        <a href="/registro" class="btn btn-primary btn-block">Registro</a>
+        
+        </div>
+
+    </div>
+    
+
+<h2>{{message}}</h2>

@@ -1,0 +1,202 @@
+<h1>{{registro}}</h1>
+
+<header class="container-fluid navbar-light  sticky-top">
+        <nav class=" navbar navbar-expand-lg bg-white container">
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active ">
+              <a class="nav-link " style="color: grey; " href="/home"> Home <span class="sr-only">(current)</span></a>
+            </li>
+             <li class="nav-item ">
+              <a class="nav-link" style="color: grey; "href="/registro"> Registro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: grey; "href="/contacto"> Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: grey;"href="/login"> Login </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: grey;"href="/turno"> Turnos </a>
+            </li>
+            
+          </ul>   
+        </div>
+      </nav>
+ </header>   
+
+
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-xl-9 mx-auto"> 
+        <div class="card card-signin flex-row my-5" style="width: 50rem;">
+          <div class="card-img-left d-none d-md-flex">
+           <div class="align-self-center mx-auto"><h2 style="color:white; font-size:50px;" > Kinei <i class="fas fa-spa" style="color:white"></i></h2>
+            </div>
+             <!-- Bakground image for card set in CSS! -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Registrate!</h5>
+            <form action="/registro" method="post" class="form-signin">
+              <div class="form-label-group">
+                <input type="text" id="inputUserame" class="form-control" name="nombre" placeholder="Nombre" required autofocus>
+                <label for="inputUserame">Nombre</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="text" id="inputUserame" class="form-control" name="apellido" placeholder="Apellido" required>
+                <label for="inputUserame">Apellido</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="text" id="inputEmail" class="form-control" name="telefono" placeholder="Celular" required>
+                <label for="inputCelular">Teléfono</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Email" required>
+                <label for="inputEmail">Email </label>
+              </div>
+              
+              <hr>
+
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="***********" required>
+                <label for="inputPassword">Password</label>
+              </div>
+              
+              <div class="form-label-group">
+                <input type="password" id="inputConfirmPassword" class="form-control" name="pass" placeholder="***********" required>
+                <label for="inputConfirmPassword">Confirmar password</label>
+              </div>
+
+              <button class="btn btn-lg btn-success btn-block text-uppercase" type="submit">Register</button>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+<div class="container-fluid">
+                <div class="container"> 
+                    <div class="card mx-auto" style="width: 50rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Registrate!</h5>
+                          <hr>
+                          <form action="/registro" method="post">
+                            <div class="form-row">
+                              <div class="col-md-4 mb-3">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" name="nombre" required>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" class="form-control" name="apellido" required>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                <label for="edad">Edad</label>
+                                <input type="text" class="form-control" name="edad" required>
+                                
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="col-md-4 mb-3">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" name="email" required>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                <label for="pass">Contraseña</label>
+                                <input type="password" class="form-control" name="pass" required>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                <label for="pass2">Reingrese su contraseña</label>
+                                <input type="password" class="form-control" name="pass2" required>
+                                
+                              </div>
+                            </div>
+                            <div class="form-row" >
+                              <div class="col-md-6 mb-3">
+                                <label for="direccion">Dirección</label>
+                                <input type="text" class="form-control" name="direccion" required>
+                              </div>
+                              <div class="col-md-3 mb-3">
+                                <label for="cp">Codigo Postal</label>
+                                <input type="text" class="form-control" name="cp" required>
+                                
+                              </div>
+                              <div class="col-md-3 mb-3">
+                                <label for="telefono">Teléfono</label>
+                                <input type="text" class="form-control" name="telefono" required>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2">
+                                <label class="form-check-label" for="invalidCheck2">
+                                  Acepto los terminos y condiciones.
+                                </label>
+                              </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Registrarme</button>
+                            {{#if status}}
+                            <h5 class="text-center text-success mt-3">{{message}} </h5>
+                            {{else}}
+                            <h5 class="text-center text-danger mt-3">{{message}}</h5>
+                            {{/if}}
+                          </form>
+
+
+                              </div>
+
+
+                            </div>
+
+
+
+
+
+                          </form>
+                     
+                          
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            
+
+        <hr class="featurette-divider">
+
+        <footer class="page-footer font-small teal pt-4">
+
+           
