@@ -6,7 +6,7 @@ let pool = mysql.createConnection({
     host : 'localhost',
     user : 'root',
     password : '',
-    database : 'kinesio'  
+    database : 'kine'  
 });
 
 pool.query = util.promisify(pool.query);
